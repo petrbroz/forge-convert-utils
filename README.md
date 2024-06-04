@@ -43,6 +43,7 @@ or
 ```
 export APS_CLIENT_ID=<client id>
 export APS_CLIENT_SECRET=<client secret>
+export APS_REGION=<resource region>
 svf-to-gltf <urn> --output-folder <path to output folder>
 ```
 
@@ -50,6 +51,7 @@ or
 
 ```
 export APS_ACCESS_TOKEN=<access token>
+export APS_REGION=<resource region>
 svf-to-gltf <urn> --output-folder <path to output folder>
 ```
 
@@ -64,6 +66,7 @@ or
 ```
 set APS_CLIENT_ID=<client id>
 set APS_CLIENT_SECRET=<client secret>
+set APS_REGION=<resource region>
 svf-to-gltf <urn> --output-folder <path to output folder>
 ```
 
@@ -71,6 +74,7 @@ or
 
 ```
 set APS_ACCESS_TOKEN=<access token>
+set APS_REGION=<resource region>
 svf-to-gltf <urn> --output-folder <path to output folder>
 ```
 
@@ -170,7 +174,7 @@ See [./samples/local-svf-to-gltf.sh](./samples/local-svf-to-gltf.sh) or
 - clone the repository
 - install dependencies: `yarn install`
 - build the library (transpile TypeScript): `yarn run build`
-- run samples in the _test_ subfolder, for example: `APS_CLIENT_ID=<your client id> APS_CLIENT_SECRET=<your client secret> node test/remote-svf-to-gltf.js <model urn> <path to output folder>`
+- run samples in the _test_ subfolder, for example: `APS_CLIENT_ID=<your client id> APS_CLIENT_SECRET=<your client secret> test/remote-svf-to-gltf.sh <model urn> <path to output folder>`
 
 If you're using [Visual Studio Code](https://code.visualstudio.com), you can use the following "task" and "launch" configurations:
 
